@@ -1,0 +1,124 @@
+reenila__@LAPTOP-BI3TBRKI:~$ vim calculator.sh
+reenila__@LAPTOP-BI3TBRKI:~$ vim calculator.sh
+reenila__@LAPTOP-BI3TBRKI:~$ git diff
+diff --git a/calculator.sh b/calculator.sh
+index e69de29..a9d11bc 100644
+--- a/calculator.sh
++++ b/calculator.sh
+@@ -0,0 +1,2 @@
++#!bin/bash
++x=a+b+c
+reenila__@LAPTOP-BI3TBRKI:~$ git commit -m "this is my first version of addition"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <reenila__@LAPTOP-BI3TBRKI.localdomain>) not allowed
+reenila__@LAPTOP-BI3TBRKI:~$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   calculator.sh
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   calculator.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .bash_logout
+        .bashrc
+        .cache/
+        .lesshst
+        .motd_shown
+        .nodehealth.sh.swp
+        .profile
+        .viminfo
+
+reenila__@LAPTOP-BI3TBRKI:~$ git add <file>
+-bash: syntax error near unexpected token `newline'
+reenila__@LAPTOP-BI3TBRKI:~$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+reenila__@LAPTOP-BI3TBRKI:~$ vim calculator.sh
+reenila__@LAPTOP-BI3TBRKI:~$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   calculator.sh
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   calculator.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .bash_logout
+        .bashrc
+        .cache/
+        .lesshst
+        .motd_shown
+        .nodehealth.sh.swp
+        .profile
+        .viminfo
+
+reenila__@LAPTOP-BI3TBRKI:~$ git diff
+diff --git a/calculator.sh b/calculator.sh
+index e69de29..9a21958 100644
+--- a/calculator.sh
++++ b/calculator.sh
+@@ -0,0 +1,2 @@
++#!bin/bash
++x=a+b+c+d
+reenila__@LAPTOP-BI3TBRKI:~$ git commit -m "this is my 1st version"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <reenila__@LAPTOP-BI3TBRKI.localdomain>) not allowed
+reenila__@LAPTOP-BI3TBRKI:~$ git config --global user.name "Sreenila K A"
+git config --global user.email "sreenila@gmail.com"
+reenila__@LAPTOP-BI3TBRKI:~$  git commit -m "this is my 1st version"
+[master (root-commit) 3d172d8] this is my 1st version
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 calculator.sh
+reenila__@LAPTOP-BI3TBRKI:~$ vim calculator.sh
+reenila__@LAPTOP-BI3TBRKI:~$ git log
+commit 3d172d814199cd60a98a0cd951e98d4e6ba7635d (HEAD -> master)
+Author: Sreenila K A <sreenila@gmail.com>
+Date:   Fri Jan 9 09:46:51 2026 +0000
+
+    this is my 1st version
+reenila__@LAPTOP-BI3TBRKI:~$ cat calculator.sh
+]#!bin/bash
+x=a+b+c+d
+y=a-b
+reenila__@LAPTOP-BI3TBRKI:~
